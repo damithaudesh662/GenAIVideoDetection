@@ -1,1 +1,1 @@
-# DeepFakeDetection
+# GenAIVideoDetection
