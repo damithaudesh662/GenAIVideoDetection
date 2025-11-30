@@ -12,7 +12,7 @@
 ---
 
 ## 📖 Overview  
-Recent video generators such as **SVD** and **Sora** can produce hyper-realistic human videos, making deepfake detection increasingly challenging.  
+Recent video generators such as **VEO** and **Sora** can produce hyper-realistic human videos, making deepfake detection increasingly challenging.  
 This project introduces a **multi-modal framework** that detects AI-generated videos based on **physical inconsistencies**, not just visual artifacts.
 
 We combine **motion biomechanics**, **semantic appearance consistency**, and **geometric depth stability** to identify synthetic human videos.
@@ -22,6 +22,7 @@ We combine **motion biomechanics**, **semantic appearance consistency**, and **g
 - **🎨 Appearance** — Dense embeddings from DINOv3  
 - **📐 Geometry** — Temporal depth coherence via Depth Anything V2  
 
+## This repo has included with only using Geometric Features
 ---
 
 ## 🚀 Key Features
@@ -31,9 +32,6 @@ Three parallel 3D-CNN classifiers (Motion, Appearance, Geometry) fused for final
 
 ### 🌊 Geometry-Aware Detection  
 Depth-based artifacts such as flickering geometry, unnatural depth boundaries, and shape inconsistencies.
-
-### 🔥 Explainable AI  
-Grad-CAM visualizations highlight *why* a video was flagged (e.g., joint distortion, inconsistent limbs).
 
 ### 🧠 Cross-Generator Robustness  
 Generalizes across **SVD**, **Sora**, and other generative models due to reliance on physical plausibility.
@@ -46,8 +44,6 @@ Generalizes across **SVD**, **Sora**, and other generative models due to relianc
 - Videos trimmed to **8 seconds**, **4 FPS**, **112×112**
 - Depth maps generated using **Depth Anything V2 (ViT-S)**  
 - Features extracted:
-  - **Motion:** Joint rotations (SMPL-X) + RAFT flow  
-  - **Appearance:** DINOv3 dense features  
   - **Geometry:** Depth maps (Inferno colormap)
 
 ---
@@ -60,4 +56,15 @@ Generalizes across **SVD**, **Sora**, and other generative models due to relianc
 
 ---
 
-## 📂 Repository Structure
+
+## 💻 Installation
+
+### **Prerequisites**
+- Python **3.8+**
+- CUDA-enabled GPU (recommended)
+
+### ** Clone the Repository**
+```bash
+https://github.com/damithaudesh662/GenAIVideoDetection.git
+cd GenAIVideoDetection
+
