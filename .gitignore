@@ -33,17 +33,50 @@ env/
 # Data & Dataset Folders
 # -------------------------
 
-dataset creation/frames_out/
-dataset creation/gen_ai/
-dataset creation/gen_ai_8s/
-dataset creation/real/
-dataset creation/real_8s/
+# dataset creation/frames_out/
+# dataset creation/gen_ai/
+# dataset creation/gen_ai_8s/
+# dataset creation/real/
+# dataset creation/real_8s/
 
 
-dataset/depthmaps/gen_ai/
-dataset/depthmaps/real/
-dataset/gen_ai/
-dataset/real/
+# dataset/depthmaps/gen_ai/
+# dataset/depthmaps/real/
+# dataset/gen_ai/
+# dataset/real/
+
+# Ignore contents of dataset creation
+dataset creation/frames_out/*
+!dataset creation/frames_out/.gitkeep
+
+dataset creation/gen_ai/*
+!dataset creation/gen_ai/.gitkeep
+
+dataset creation/gen_ai_8s/*
+!dataset creation/gen_ai_8s/.gitkeep
+
+dataset creation/real/*
+!dataset creation/real/.gitkeep
+
+dataset creation/real_8s/*
+!dataset creation/real_8s/.gitkeep
+
+
+# Ignore contents of dataset/depthmaps
+dataset/depthmaps/gen_ai/*
+!dataset/depthmaps/gen_ai/.gitkeep
+
+dataset/depthmaps/real/*
+!dataset/depthmaps/real/.gitkeep
+
+
+# Ignore contents of dataset
+dataset/gen_ai/*
+!dataset/gen_ai/.gitkeep
+
+dataset/real/*
+!dataset/real/.gitkeep
+
 
 
 
