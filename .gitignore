@@ -1,0 +1,103 @@
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.log
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+
+# -------------------------
+# PyTorch / ML Models
+# -------------------------
+*.pt
+*.pth
+*.onnx
+*.ckpt
+
+# model checkpoints folder
+# checkpoints/
+# */checkpoints/
+
+# -------------------------
+# Data & Dataset Folders
+# -------------------------
+
+dataset creation/frames_out/
+dataset creation/gen_ai/
+dataset creation/gen_ai_8s/
+dataset creation/real/
+dataset creation/real_8s/
+
+
+dataset/depthmaps/gen_ai/
+dataset/depthmaps/real/
+dataset/gen_ai/
+dataset/real/
+
+
+
+# */dataset/
+
+processed/
+*/processed/
+
+fake images/
+# frames_output/
+graph/
+
+assets/
+*/assets/
+
+# Test & temp folders
+test/
+test 1/
+test 2/
+
+# -------------------------
+# Videos & Images
+# -------------------------
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+*.jpg
+*.jpeg
+*.png
+*.bmp
+
+# -------------------------
+# System / IDE Files
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# -------------------------
+# Python packaging outputs
+# -------------------------
+build/
+dist/
+*.egg-info/
+
+# -------------------------
+# Others
+# -------------------------
+*.zip
+*.tar
+*.tar.gz
+
